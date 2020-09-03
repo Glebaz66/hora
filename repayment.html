@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <title>Hora Credit</title>
+    <link rel="stylesheet" href="./src/style.css">
+    
+    <script>
+        window.CalcData = { sum: 10000, days: 180 };
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="head">
+            <div class="__desktop">
+                <div class="container">
+                    <div class="__desktop_box">
+                        <div class="__logo">
+                            <a href="index.html">
+                                <img src="./src/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="__menu">
+                            <ul>
+                                <li class="menu__item"><a
+                                        href="loan-repayment.html">Despre împrumut</a>
+                                </li>
+                                <li class="menu__item"><a
+                                        href="repayment.html">Cum plătesc</a>
+                                </li>
+                                <li class="menu__item"><a href="faq.html">Întrebări
+                                        frecvente</a>
+                                </li>
+                                <li class="menu__item"><a href="contacts.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="__login">
+                            <a href="login.html" class="ui-button"><span class="ui-button-text">Intră în cont</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="__mobile">
+                <div class="container">
+                    <div class="__mobile_box">
+                        <div class="__mobile_button"><span></span></div>
+                        <div class="__logo">
+                            <a href="index.html">
+                                <img src="./src/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="__login">
+                            <a href="login.html" class="ui-button"><span
+                                    class="ui-button-text">Intră în cont</span></a>
+                        </div>
+                    </div>
+                    <div class="__mobile_open">
+                        <div class="container">
+                            <div class="_holder">
+                                <div class="__mobile_box">
+                                    <div class="__mobile_button"><span></span></div>
+                                    <div class="__logo">
+                                        <a href="index.html">
+                                            <img src="./src/img/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="__login">
+                                    </div>
+                                </div>
+                                <div class="__menu">
+                                    <ul>
+                                        <li class="menu__item"><a
+                                            href="loan-repayment.html">Despre împrumut</a>
+                                    </li>
+                                    <li class="menu__item"><a
+                                            href="repayment.html">Cum plătesc</a>
+                                    </li>
+                                    <li class="menu__item"><a href="faq.html">Întrebări
+                                            frecvente</a>
+                                    </li>
+                                    <li class="menu__item"><a href="contacts.html">Contact</a>
+                                    </li>
+                                        <li class="menu__item"><a href="login.html">Intră în
+                                                cont</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="head__padding">&nbsp;</div>
+      
+
+        <script src="./src/jquery-3.2.1.min.js" defer=""></script>
+        <script src="./src/jquery.inputmask.min.js" defer=""></script>
+        <script>
+            function ShowMess() {
+
+                var obj = document.querySelector(".message");
+                obj.classList.add('active');
+                return false;
+            }
+
+            window.addEventListener('DOMContentLoaded', function () {
+                //jquery
+                (function ($) {
+                    $(document).ready(function () {
+
+                        $("#fieldContract").inputmask("9999-9999", { "placeholder": "X" });
+                    })
+                })(jQuery);
+            });
+        </script>
+        <section class="another_section">
+            <div class="container">
+                <div class="_box">
+                    <h1>
+                        Poți rambursa împrumutul Hora prin câteva metode simple:
+                    </h1>
+                    <div class="message"><span>Numărul de contract introdus nu este corect, vă rugăm verificați și
+                            reintroduceți numărul corect</span></div>
+                    <div class="repayment__block">
+                        <section class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img cards-icon"></div>
+                            </figure>
+                            <div class="ui-outputpanel ui-widget section__data">
+                                <div id="repayByAnotherUser:checkDealNoPanel"
+                                    class="ui-outputpanel ui-widget repayment__contract" style="position: relative;">
+                                    <label class="repayment__contract__label">Introduceți
+                                        numărul contractului</label>
+                                    <div class="js-input-block">
+                                        <div class="fieldset__item">
+                                            <div class="item__content"><input id="fieldContract" name="contract"
+                                                    type="tel" maxlength="10" placeholder="****-****"
+                                                    class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all repayment__contract__input item__input empty"
+                                                    role="textbox" aria-disabled="false" aria-readonly="false"
+                                                    inputmode="text"><label class="item__label"
+                                                    for="fieldContract">Introduceți numărul contractului</label>
+                                                <hr class="item__line">
+                                            </div>
+                                        </div>
+
+                                        <a href="repayment.html"
+                                            onclick="ShowMess(this);" class="ui-button"><span
+                                                class="ui-button-text">Plată</span></a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div id="repayByAnotherUser:j_idt90:j_idt91"
+                                    class="ui-accordion-content ui-helper-reset ui-widget-content" role="tabpanel"
+                                    aria-hidden="false">
+                                    <ul>
+                                        <li>Dacă ai ales metoda de plată "Online prin card bancar" este necesar să
+                                            completezi un formular cu informațiile despre cardul tău în pagina
+                                            securizată a procesatorului de plăți
+                                        </li>
+                                        <li>Pentru utilizare 100% sigură folosim tranzacții 3D Secure. Informația legată
+                                            de cardul tău nu este transferată sau stocată, nici pe serverele noastre,
+                                            nici pe serverele procesatorului de plăți, aceste date fiind direct
+                                            introduse în sistemele Visa și MasterCard
+                                        </li>
+                                        <li>Important de știut! - Pentru plățile prin card bancar nu este perceput nici
+                                            un comision
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </section>
+
+                        <section class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img cabinet-icon"></div>
+                            </figure>
+                            <div class="section__data">
+                                <div class="section__accordion__title">Direct din cabinetul personal
+                                </div>
+                                <div class="ui-accordion ui-widget ui-helper-reset ui-hidden-container section__accordion cabinet"
+                                    role="tablist" data-widget="widget_repayByAnotherUser_j_idt97">
+                                    <div class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top"
+                                        role="tab" aria-expanded="true" aria-selected="true" tabindex="0"><span
+                                            class="ui-icon ui-icon-triangle-1-s"></span>&nbsp;
+                                    </div>
+                                    <div id="repayByAnotherUser:j_idt97:j_idt98"
+                                        class="ui-accordion-content ui-helper-reset ui-widget-content" role="tabpanel"
+                                        aria-hidden="false">
+                                        <ul>
+                                            <li>Loghează-te în contul personal</li>
+                                            <li>Alege suma pe care dorești să o achiți, pentru extindere sau plată
+                                                totală
+                                            </li>
+                                            <li>Apasă butonul Plată</li>
+                                            <li>Completează datele cardului bancar și finalizează tranzacția</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img bank-icon"></div>
+                            </figure>
+                            <div class="section__data">
+                                <div class="section__accordion__title">Mergi la cea mai apropiată sucursală a băncii
+                                    tale sau utilizează serviciul internet banking pentru a rambursa împrumutul folosind
+                                    detaliile de mai jos
+                                </div>
+                                <div id="repayByAnotherUser:j_idt103"
+                                    class="ui-accordion ui-widget ui-helper-reset ui-hidden-container section__accordion bank"
+                                    role="tablist" data-widget="widget_repayByAnotherUser_j_idt103">
+                                    <div class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top"
+                                        role="tab" aria-expanded="true" aria-selected="true" tabindex="0"><span
+                                            class="ui-icon ui-icon-triangle-1-s"></span>&nbsp;</div>
+                                    <div id="repayByAnotherUser:j_idt103:j_idt104"
+                                        class="ui-accordion-content ui-helper-reset ui-widget-content" role="tabpanel"
+                                        aria-hidden="false">
+                                        <ul>
+                                            <li>Beneficiar: Hora Credit IFN SA</li>
+                                            <li>CUI: 35795481</li>
+                                            <li>Detalii plată – numărul de contract alocat</li>
+                                            <li>Conturi bancare:
+                                                <ul>
+                                                    <li>RO80BTRLRONCRT0336663101, Banca Transilvania</li>
+                                                    <li>RO07BACX0000001280623000, UniCredit Bank</li>
+                                                    <li>RO82RNCB0082151672210001, BCR</li>
+                                                </ul>
+                                            </li>
+                                            <li>Nu se percep comisioane la depunerea în numerar a oricăror sume direct
+                                                la ghișeurile băncilor partenere sau la ATM-urile acestora</li>
+                                        </ul>
+                                    </div><input type="hidden" id="repayByAnotherUser:j_idt103_active"
+                                        name="repayByAnotherUser:j_idt103_active" value="0" autocomplete="off">
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="section__item">
+                            <figure class="section__figure"><img id="repayByAnotherUser:j_idt107"
+                                    src="./src/img/selfpay-logo.png" alt=""
+                                    class="selfpay-logo section__logo">
+                            </figure>
+                            <div class="section__data">
+                                <div class="section__accordion__title">Mergi la cea mai apropiată locație SelfPay și
+                                    efectuează plata la terminal, folosind instrucțiunile de mai jos
+                                </div>
+                                <div id="repayByAnotherUser:j_idt111"
+                                    class="ui-accordion ui-widget ui-helper-reset ui-hidden-container section__accordion bank"
+                                    role="tablist" data-widget="widget_repayByAnotherUser_j_idt111">
+                                    <div class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top"
+                                        role="tab" aria-expanded="true" aria-selected="true" tabindex="0"><span
+                                            class="ui-icon ui-icon-triangle-1-s"></span>&nbsp;</div>
+                                    <div id="repayByAnotherUser:j_idt111:j_idt112"
+                                        class="ui-accordion-content ui-helper-reset ui-widget-content" role="tabpanel"
+                                        aria-hidden="false">
+                                        <ul>
+                                            <li>Selecteză din meniul principal butonul: Rate Credite - Hora Credit</li>
+                                            <li>Introdu CNP-ul sau numărul de contract</li>
+                                            <li>Alege suma de plată sau introdu o nouă valoare, după caz</li>
+                                            <li>Efectuează plata. Introdu bancnotele* una câte una prin fanta din
+                                                dreapta jos</li>
+                                        </ul>
+                                    </div><input type="hidden" id="repayByAnotherUser:j_idt111_active"
+                                        name="repayByAnotherUser:j_idt111_active" value="0" autocomplete="off">
+                                </div>
+                            </div>
+                        </section>
+                        <div class="partners">
+                            <div class="partners__block">
+                                <figure class="partners__figure"><img src="./src/img/mc-logo.png" alt=""
+                                        class="partners__img">
+                                </figure>
+                            </div>
+                            <div class="partners__block">
+                                <figure class="partners__figure"><img src="./src/img/visa-logo.png" alt=""
+                                        class="partners__img">
+                                </figure>
+                            </div>
+                            <div class="partners__block">
+                                <figure class="partners__figure"><img src="./src/img/maestro-logo.png" alt=""
+                                        class="partners__img">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <section class="home_footers">
+        <div class="container">
+            <div class="_box">
+                <p>
+                    Consultați <a href="https://credit-rapid.org/v_3/docs/Personal_data_protection_policy.pdf"
+                        target="_blank">aici</a> Politica de Confidențialitate a Datelor.
+                    Copyright © 2016 «HoraCredit» Toate drepturile rezervate
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="mobile_fly_button _open">
+        <div class="mobile_fly_button_box">
+            <a href="login.html" class="ui-button"><span class="ui-button-text">Aplică
+                    acum</span></a>
+        </div>
+    </div>
+    <script>
+        var cookie_config = { 'cookies_law_name': "cookies_law_hora", 'css': "https://credit-rapid.org/v_3/cookie_law/cookie_law.css", 'text': "Site-ul www.horacredit.ro folosește cookie-uri pentru a personaliza conținutul afișat, a se conecta și pentru analiza traficului. Dacă continuați să utilizați acest site, înseamnă că înțelegeți acest lucru. Pentru mai multe informații, consultați <a href=\"https://credit-rapid.org/v_3/docs/politica_cookies.pdf\" target=\"_blank\">politica privind cookie-urile</a> și <a href=\"https://credit-rapid.org/v_3/docs/Personal_data_protection_policy.pdf\" target=\"_blank\">Politica de Protecție a Datelor</a>", 'button': "Închide" };
+    </script>
+    <script type="text/javascript" src="./src/cookie_law.min.js" defer=""
+        onload="new script_cookie_law(cookie_config)"></script>
+
+    <div class="reminder js-reminder">
+        <div class="reminder__container">
+            <a href="repayment.html"
+                class="reminder__close js-reminder__close"></a>
+            <div class="reminder__content">
+
+                <div class="reminder__text">
+
+
+                    <p>Poti primi între 3 000 și </p>
+                    <p class="description"><span>10 000</span> ron
+                    </p>
+                    <p>pentru <span class="discount__number">6</span> luni!
+                    </p>
+                </div>
+                <div id="reminder" class="ui-outputpanel ui-widget">
+
+                    <a href="login.html?term=180&amp;amount=10000" onclick=""
+                        class="ui-button"><span class="ui-button-text">Aplică acum</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/script.min.js"></script>
+    <script src="./src/basil.js" defer=""></script>
+</body>
+
+</html>
