@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <title>Hora Credit</title>
+    <link rel="stylesheet" href="./src/nouislider.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="__desktop">
+                <div class="container">
+                    <div class="__desktop_box">
+                        <div class="__logo">
+                            <a href="index.html">
+                                <img src="./src/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="__menu">
+                            <ul>
+                                <li class="menu__item"><a
+                                        href="loan-repayment.html">Despre împrumut</a>
+                                </li>
+                                <li class="menu__item"><a
+                                        href="repayment.html">Cum plătesc</a>
+                                </li>
+                                <li class="menu__item"><a href="faq.html">Întrebări
+                                        frecvente</a>
+                                </li>
+                                <li class="menu__item"><a href="contacts.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="__login">
+                            <a href="login.html" class="ui-button"><span
+                                    class="ui-button-text">Intră în cont</span></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="__mobile">
+                <div class="container">
+                    <div class="__mobile_box">
+                        <div class="__mobile_button"><span></span></div>
+                        <div class="__logo">
+                            <a href="index.html">
+                                <img src="./src/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="__login">
+                            <a href="login.html" class="ui-button"><span
+                                    class="ui-button-text">Intră în cont</span></a>
+                        </div>
+                    </div>
+                    <div class="__mobile_open">
+                        <div class="container">
+                            <div class="_holder">
+                                <div class="__mobile_box">
+                                    <div class="__mobile_button"><span></span></div>
+                                    <div class="__logo">
+                                        <a href="index.html">
+                                            <img src="./src/img/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="__login">
+                                    </div>
+                                </div>
+                                <div class="__menu">
+                                    <ul>
+                                        <li class="menu__item"><a
+                                            href="loan-repayment.html">Despre împrumut</a>
+                                    </li>
+                                    <li class="menu__item"><a
+                                            href="repayment.html">Cum plătesc</a>
+                                    </li>
+                                    <li class="menu__item"><a href="faq.html">Întrebări
+                                            frecvente</a>
+                                    </li>
+                                    <li class="menu__item"><a href="contacts.html">Contact</a>
+                                    </li>
+                                        <li class="menu__item"><a href="login.html">Intră în
+                                                cont</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="head__padding">&nbsp;</div>
+        <section class="home_1">
+            <div class="container">
+                <div class="home_1_box">
+                    <div class="home_1_box_info">
+
+                        <div class="_top">
+
+                            <h2 class="_top__title">
+                                <span class="_top__number">*0%</span>
+                                dobândă până la 3 000 RON!<br>
+                                Sau <span class="_top__number">0,08%</span> între 3 000 și <br>
+                                <span class="_top__number">10 000</span>
+                                RON
+                            </h2>
+                        </div>
+                        <div class="_bottom">
+
+                            <div class="section__item">
+                                <figure class="section__figure">
+                                    <div class="section__img cash-icon"></div>
+                                    <figcaption class="section__figcaption">
+                                        <div id="j_idt73" class="ui-outputpanel ui-widget">0% dobândă până la <span
+                                                class="nowrap">3 000 RON</span></div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="section__item">
+                                <figure class="section__figure">
+                                    <div class="section__img lock-icon"></div>
+                                    <figcaption class="section__figcaption">
+                                        Rapid, Sigur şi de Încredere
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="section__item">
+                                <figure class="section__figure">
+                                    <div class="section__img ok-icon"></div>
+                                    <figcaption class="section__figcaption">
+                                        FĂRĂ ipotecă, FĂRĂ garanţii
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home_1_box_calc">
+                        <div class="calc_box">
+                            <div class="workplace top">
+                                <div class="select-form__title">
+                                    Suma şi perioada
+                                </div>
+                                <div class="select-form__amount"><span id="calc_slider_sum_text">3 000</span>
+                                    RON
+                                </div>
+                            </div>
+                            <div class="workplace">
+                                <div class="slider_box">
+                                    <div id="calc_slider_sum"
+                                        class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"
+                                        style="background: linear-gradient(to right, rgb(254, 198, 1) 50%, rgb(225, 225, 225) 50%);">
+                                        <div class="noUi-base">
+                                            <div class="noUi-connects"></div>
+                                            <div class="noUi-origin"
+                                                style="transform: translate(-500%, 0px); z-index: 4;">
+                                                <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0"
+                                                    role="slider" aria-orientation="horizontal" aria-valuemin="100.0"
+                                                    aria-valuemax="10000.0" aria-valuenow="3000.0"
+                                                    aria-valuetext="3000.00">
+                                                    <div class="noUi-touch-area"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="noUi-pips noUi-pips-horizontal">
+                                            <div class="noUi-marker noUi-marker-horizontal noUi-marker-normal"
+                                                style="left: 50%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="legend_box">
+                                        <span>100</span>
+                                        <span>3 000</span>
+                                        <span>10 000</span>
+                                    </div>
+                                </div>
+                                <div class="select-form__amount"><span id="calc_slider_days_text">6 luni</span>
+
+                                </div>
+                                <div class="slider_box">
+                                    <div id="calc_slider_days"
+                                        class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"
+                                        style="background: linear-gradient(to right, rgb(254, 198, 1) 100%, rgb(225, 225, 225) 100%);">
+                                        <div class="noUi-base">
+                                            <div class="noUi-connects"></div>
+                                            <div class="noUi-origin" style="transform: translate(0%, 0px); z-index: 4;">
+                                                <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0"
+                                                    role="slider" aria-orientation="horizontal" aria-valuemin="1.0"
+                                                    aria-valuemax="180.0" aria-valuenow="180.0" aria-valuetext="180.00">
+                                                    <div class="noUi-touch-area"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="noUi-pips noUi-pips-horizontal">
+                                            <div class="noUi-marker noUi-marker-horizontal noUi-marker-normal"
+                                                style="left: 60%;"></div>
+                                            <div class="noUi-marker noUi-marker-horizontal noUi-marker-normal"
+                                                style="left: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="legend_box days">
+                                        <span>1<br>zi</span>
+                                        <span>30<br>zile</span>
+                                        <span>70<br>zile</span>
+                                        <span>6<br>luni</span>
+                                    </div>
+                                </div>
+                                <div class="checkout">
+                                    <a href="login.html?term=180&amp;amount=3000"
+                                        id="calc_button_send" onclick="" class="ui-button"><span
+                                            class="ui-button-text">Aplică acum</span></a>
+                                </div>
+
+                            </div>
+                            <div class="workplace blue">
+                                <div class="results">
+                                    <div class="box">
+                                        <span>Data scadentă:</span>
+                                        <span id="calc_date">01.03.2021</span>
+                                    </div>
+                                    <div class="box">
+                                        <span>Suma solicitată:</span>
+                                        <span id="calc_suma">3 000 RON</span>
+                                    </div>
+                                    <div class="box">
+                                        <span>Dobândă:</span>
+                                        <span id="calc_suma_procent">3 259,62 RON</span>
+                                    </div>
+                                    <div class="box">
+                                        <span>Total de plată:</span>
+                                        <span id="calc_suma_total">6 259,62 RON</span>
+                                    </div>
+                                    <div class="box">
+                                        <span>Rata dobânzii anuale:</span>
+                                        <span id="calc_suma_procent_year">365%</span>
+                                    </div>
+                                    <div class="box">
+                                        <span>DAE:</span>
+                                        <span id="calc_suma_procent_dae">32,98%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="home_howitworks">
+            <div class="container">
+                <div class="_box">
+                    <h2>
+                        Primul împrumut fără dobândă!
+                    </h2>
+                    <div class="_box__section">
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img create-icon"></div>
+                                <figcaption class="section__figcaption">
+                                    Creează un cont pe platforma noastră
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img loan-icon"></div>
+                                <figcaption class="section__figcaption">
+                                    Alege suma de care ai nevoie
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img money-icon"></div>
+                                <figcaption class="section__figcaption">
+                                    Primeşti banii
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home_requirements">
+            <div class="container">
+                <div class="_box">
+                    <h2>Cerinţe Generale</h2>
+                    <div class="_box__section">
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img age-icon"></div>
+                                <figcaption class="section__figcaption">
+                                    Vârsta minimă 19 ani
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img docs-icon"></div>
+                                <figcaption class="section__figcaption">
+                                    Copie scanată carte de identitate
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img bank-icon"></div>
+                                <figcaption class="section__figcaption">
+                                    Cont bancar sau card
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home_contacts">
+            <div class="container">
+                <div class="_box">
+                    <h2>Contact
+                    </h2>
+                    <div class="_box__section">
+
+
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img num-icon"></div>
+                            </figure>
+                            <div class="section__item__data">
+                                <h3 class="section__sub-title separator">
+                                    <span>
+                                        Luni – Vineri:
+                                        <span class="nowrap">9:00 - 20:00</span>
+                                    </span>
+
+                                    <span>
+
+                                        Sâmbătă:
+
+                                        <span class="nowrap">9:00 - 17:30</span>
+
+                                    </span>
+
+                                    <span>
+
+                                        Duminică:
+
+                                        <span class="nowrap">9:00 - 17:30</span>
+
+                                    </span>
+                                </h3>
+                                <div class="section__sub-title section__sub-title_gray">
+                                    <span class="nowrap">
+                                        Informaţii generale:
+                                        <span class="nowrap">
+                                            <a href="tel:+40 318 18 18 18">
+                                                +40 318 18 18 18
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="section__sub-title section__sub-title_gray">
+                                    <span class="nowrap">
+                                        Contracte în derulare:
+                                        <span class="nowrap">
+                                            <a href="tel:+40 318 10 10 72">
+                                                +40 318 10 10 72
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img email-icon"></div>
+                            </figure>
+                            <div class="section__item__data">
+                                <h3 class="section__sub-title separator">
+                                    Hora Credit IFN S.A.
+                                </h3>
+                                <div class="section__sub-title section__sub-title_gray">
+                                    Splaiul Unirii, nr. 16, Clădirea Muntenia, Etaj 2, Sectorul 4, Bucureşti
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__item">
+                            <figure class="section__figure">
+                                <div class="section__img address-icon"></div>
+                            </figure>
+                            <div class="section__item__data">
+                                <h3 class="section__sub-title separator">
+                                    E-mail
+                                </h3>
+                                <div class="section__sub-title section__sub-title_gray">
+                                    <span class="nowrap">info@horacredit.ro</span>
+                                </div>
+                                <div class="section__sub-title section__sub-title_gray">
+                                    <span class="nowrap">collection@horacredit.ro</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="__text">Hora Credit acționează cu responsabilitate și ține cont de noile cerințe
+                        legislative impuse de starea de urgență. Dacă ați fost afectat de COVID-19 și doriți să
+                        beneficiați de condițiile speciale impuse de lege, vă rugăm să ne transmiteți în scris, prin
+                        email la adresa <a href="mailto:collection@horacredit.ro">collection@horacredit.ro</a>, Cererea
+                        precum și documentul privind diminuarea veniturilor Dumneavoastră, cauzată de COVID-19. Fără
+                        aceste documente solicitarea Dumneavoastră nu va putea fi procesată. Dacă nu veți putea trimite
+                        prin poștă sau mail, puteți să ne contactați telefonic, la numărul <a class="nowrap"
+                            href="tel:+40 318 10 10 72">+40 318 10 10 72</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home_text">
+            <div class="container">
+                <div class="_box">
+                    <div class="pharagraph">
+                        <p class="pharagraph-definition">* 0% dobândă presupune o dobândă de 0,0001%
+                        </p>
+                    </div>
+                    <div class="pharagraph">
+                        <p class="pharagraph-title">Interogarea bazelor de date
+                        </p>
+                        <p class="pharagraph-definition">Pentru analiza solicitării de împrumut și a bonității
+                            aplicantului, Hora Credit IFN SA va interoga bazele de date ale ANAF respectiv ale Biroului
+                            de Credit S.A.
+                        </p>
+                        <p class="pharagraph-definition">Acest lucru este posibil numai în baza acordurilor specifice
+                            ale clientului, exprimate în cadrul procesului de aplicare pentru împrumutul HORA.
+                        </p>
+                        <p class="pharagraph-definition">Obiectul Protocolului incheiat intre Hora Credit IFN S.A. si
+                            A.N.A.F. constă în organizarea unui cadru formal de îmbunătățire a activității de creditare
+                            prin reducerea riscului de fraudă și fluidizarea procesului operațional de creditare, ca
+                            urmare a simplificării documentației solicitate aplicantului, precum și prevenirea și
+                            combaterea evaziunii fiscale, prin furnizarea cu operativitate a informațiilor deținute de
+                            fiecare parte semnatară. În acest sens vă rugăm a se vedea <a
+                                href="https://credit-rapid.org/v_3/docs/comunicat_site_ptr_IFN_uri.pdf"
+                                target="_blank">Comunicatul</a> transmis de către A.N.A.F.
+                        </p>
+                    </div>
+                    <div class="pharagraph">
+                        <p class="pharagraph-title">Consecinţele neîndeplinirii obligaţiilor de plată
+                        </p>
+                        <p class="pharagraph-definition">Hora Credit are dreptul: (a) să perceapă de la debitor comision
+                            pentru neplata ratelor în cuantum de 1% din valoarea soldului restant și penalităţi de
+                            întârziere în cuantum de 1% pentru fiecare zi de întârziere, aplicat la soldul restant al
+                            împrumutului, cu excepţia dobânzii restante, după ce contractul a ajuns la maturitate; (b)
+                            să furnizeze informaţiile prevăzute de lege către Biroul de Credit, referitor la îndatorarea
+                            debitorului, ceea ce afectează istoricul de credit al debitorului şi ratingul său de credit,
+                            putând duce la respingerea cererilor ulterioare de credit; (c) să folosească serviciile unor
+                            societăţi specializate în recuperarea creanţelor; (d) să iniţieze procesul de recuperare şi
+                            executare silită, prin intermediul instanţelor de judecată sau prin orice alte modalităţi
+                            permise de lege; (e) să atribuie debitorului costurile asociate procedurilor de recuperare
+                            şi executare silită. Neplata până la data scadenței va genera aplicarea dobânzii standard
+                            pentru întreaga perioadă a împrumutului. Neplata va atrage raportarea la Biroul de Credit şi
+                            poate duce la deteriorarea solvabilităţii debitorului şi a capacităţii sale de a primi
+                            credite. Autoritatea Naţională pentru Protecţia Consumatorilor are sediul în Bucureşti. Bd.
+                            Aviatorilor, nr. 72, sector 1 (www.anpc.gov.ro). Citiți mai multe despre <a
+                                href="https://credit-rapid.org/v_3/docs/Loan_terms_and_conditions.pdf"
+                                target="_blank">Termenii şi Condiţiile pentru împrumutul</a> de acordare a
+                            împrumuturilor.
+                        </p>
+                    </div>
+                    <div class="pharagraph">
+                        <p class="pharagraph-title">Legislaţia în vigoare
+                        </p>
+                        <p class="pharagraph-definition">Hora Credit îşi desfăşoară activitatea în baza ansamblului
+                            prevederilor legale în vigoare ale legislaţiei Române, în conformitate cu Legea nr. 93/2009
+                            privind instituţiile financiare nebancare şi este înregistrată în Registrul General al BNR
+                            cu nr. RG-PJR-41-110313/09.09.2016. În activitatea noastră aplicăm prevederile. OUG nr.
+                            50/2010 şi OUG 52/2016 privind contractele de credit pentru consumatori, precum şi cele ale
+                            Ordonanţei Guvernului nr. 85/2004 privind protecţia consumatorilor, pentru încheierea şi
+                            derularea contractelor la distanţă privind împrumuturile acordate persoanelor fizice. Hora
+                            Credit funcţionează conform cerințelor Regulamentului (UE) 2016/679 (“GDPR”), aplicabil de
+                            la 25 Mai 2018 și este înregistrată la ANSPDCP, ca operator de date cu caracter personal în
+                            relaţia cu terţe persoane în vederea stabilirii bonităţii clienţilor, sub numărul
+                            37877.<br>Consultați <a
+                                href="https://credit-rapid.org/v_3/docs/Personal_data_protection_policy.pdf"
+                                target="_blank">aici</a> Politica de Confidențialitate a Datelor.
+                        </p>
+                    </div>
+                    <div id="j_idt134" class="ui-outputpanel ui-widget pharagraph">
+                        <p class="pharagraph-title">Exemplu de calcul pentru un împrumut cu dobândă *0%
+                        </p>
+                        <p class="pharagraph-definition">Pentru un împrumut în valoare de 1.000 RON, valoarea dobânzii
+                            este de 0,001 RON pe zi; RD (rata anuală a dobânzii) – 0,0365%; DAE (dobânda anuală
+                            efectivă) – 0,0365% calculată pentru 30 de zile.
+                        </p>
+                    </div>
+                    <div class="pharagraph">
+                        <p class="pharagraph-title">Exemplu de calcul pentru un împrumut cu dobândă 2%
+                        </p>
+                        <p class="pharagraph-definition">Pentru un împrumut în valoare de 1.000 RON, valoarea dobânzii
+                            este de 20 RON pe zi; RD (rata anuală a dobânzii) – 730%; DAE (dobânda anuală efectivă) –
+                            30341.1% calculată pentru 30 de zile. Împrumutatul poate beneficia de extinderea automată a
+                            perioadei împrumutului pentru un termen maxim de 360 de zile, în baza unei plăţi minime aşa
+                            cum reiese din contractul de împrumut.
+                        </p>
+                    </div>
+                    <div id="j_idt145" class="ui-outputpanel ui-widget pharagraph">
+                        <p class="pharagraph-title">Exemplu de calcul pentru un împrumut cu dobândă 0,08% aplicată la
+                            suma împrumutată
+                        </p>
+                        <p class="pharagraph-definition">Pentru un împrumut în valoare de 10.000 RON, valoarea dobânzii
+                            este de 8 RON pe zi; RD (rata anuală a dobânzii) – 29,2%; DAE (dobânda anuală efectivă) –
+                            34% calculată pentru 70 de zile. Împrumutatul poate beneficia de extinderea automată a
+                            perioadei împrumutului pentru un termen maxim de 364 de zile, în baza unei plăţi minime aşa
+                            cum reiese din contractul de împrumut.
+                        </p>
+                    </div>
+                    <div class="pharagraph">
+                        <p class="pharagraph-title">Exemplu de calcul pentru un împrumut cu dobândă 1% aplicată la suma
+                            împrumutată
+                        </p>
+                        <p class="pharagraph-definition">Pentru un împrumut în valoare de 10.000 RON, valoarea dobânzii
+                            este de 100 RON pe zi; RD (rata anuală a dobânzii) – 365%; DAE (dobânda anuală efectivă) –
+                            2945% calculată pentru 70 de zile. Împrumutatul poate beneficia de extinderea automată a
+                            perioadei împrumutului pentru un termen maxim de 364 de zile, în baza unei plăţi minime aşa
+                            cum reiese din contractul de împrumut.
+                        </p>
+                    </div>
+                    <div class="pharagraph">
+                        <p class="pharagraph-title">Dacă ați solicitat și v-a fost aprobat un împrumut cu dobândă de 1%
+                            cu plata lunară, atunci:
+                        </p>
+                        <p class="pharagraph-definition">Cu o sumă a împrumutului de <span class="__nowrap">10.000
+                                RON</span>, dobânda aplicată va fi de <span class="__nowrap">12.986 RON</span> pentru 6
+                            luni, adică <span class="__nowrap">1%</span> pe zi din soldul rămas, în conformitate cu
+                            calculul anuității. <span class="__nowrap">DAE = 2314%.</span> Clientul a primit <span
+                                class="__nowrap">10.000 RON</span> la 22 martie. Prima plată în valoare de <span
+                                class="__nowrap">3.838 RON</span> va fi achitată în data de 22 Aprilie. La fel în
+                            fiecare lună. Dacă cliențul plătește mai mult de <span class="__nowrap">3.838 RON,</span>
+                            plata înregistrată în plus este distribuită ca parte a principalului de plată. Suma totală
+                            de plată va fi de <span class="__nowrap">22.986RON.</span>
+                        </p>
+                    </div>
+                    <div class="pharagraph">
+                        <p class="pharagraph-title">Detalii de contact
+                        </p>
+                        <p class="pharagraph-definition">
+                            <span class="pharagraph-accent">Hora Credit IFN S.A.</span>, Splaiul Unirii, nr. 16,
+                            Clădirea Muntenia, Etaj 2, Sectorul 4, Bucureşti.Tel.: <a href="tel:+40318181818"
+                                class="__nowrap">+40 318 18 18 18</a>. Email: info@horacredit.ro
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="home_footers">
+        <div class="container">
+            <div class="_box">
+                <p>
+                    Copyright © 2016 «HoraCredit» Toate drepturile rezervate
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="mobile_fly_button">
+        <div class="mobile_fly_button_box">
+            <a href="login.html" class="ui-button"><span class="ui-button-text">Aplică
+                    acum</span></a>
+        </div>
+    </div>
+    <script>
+        var cookie_config = { 'cookies_law_name': "cookies_law_hora", 'css': "https://credit-rapid.org/v_3/cookie_law/cookie_law.css", 'text': "Site-ul www.horacredit.ro folosește cookie-uri pentru a personaliza conținutul afișat, a se conecta și pentru analiza traficului. Dacă continuați să utilizați acest site, înseamnă că înțelegeți acest lucru. Pentru mai multe informații, consultați <a href=\"https://credit-rapid.org/v_3/docs/politica_cookies.pdf\" target=\"_blank\">politica privind cookie-urile</a> și <a href=\"https://credit-rapid.org/v_3/docs/Personal_data_protection_policy.pdf\" target=\"_blank\">Politica de Protecție a Datelor</a>", 'button': "Închide" };
+    </script>
+    <script type="text/javascript" src="./cookie_law.min.js" defer=""
+        onload="new script_cookie_law(cookie_config)"></script>
+
+    <div class="reminder js-reminder">
+        <div class="reminder__container">
+            <a href="login.html" class="reminder__close js-reminder__close"></a>
+            <div class="reminder__content">
+                <div class="reminder__text">
+                    <p>Poti primi între 3 000 și </p>
+                    <p class="description"><span>10 000</span> ron
+                    </p>
+                    <p>pentru <span class="discount__number">6</span> luni!
+                    </p>
+                </div>
+                <div id="reminder" class="ui-outputpanel ui-widget">
+                    <a href="login.html?term=180&amp;amount=10000" onclick=""
+                        class="ui-button"><span class="ui-button-text">Aplică acum</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/script.min.js"></script>
+    <script src="./src/nouislider.min.js"></script>
+    <script src="./src/calc.min.js"></script>
+
+
+    <script type="text/javascript" src="./src/basil.js" defer=""></script>
+    <script>
+        window.onload = function () {
+            window.parent.dataLayer = window.dataLayer || [];
+        }
+        var partner_iframe_time_load;
+        var partner_iframe_time_load_f = 0;
+        window.addEventListener('DOMContentLoaded', function () {
+            partner_iframe_time_load = setTimeout(function () { if (partner_iframe_time_load_f == 0) { partner_iframe_time_load_f = 1; var partnerIframeEvent = new Event('getPartnerIframe'); window.dispatchEvent(partnerIframeEvent); } }, 10000);
+
+        });
+        window.addEventListener('load', function () {
+            clearTimeout(partner_iframe_time_load);
+            partner_iframe_time_load = setTimeout(function () { if (partner_iframe_time_load_f == 0) { partner_iframe_time_load_f = 1; var partnerIframeEvent = new Event('getPartnerIframe'); window.dispatchEvent(partnerIframeEvent); } }, 2000);
+
+        });
+
+        window.CalcData = { sum: 10000, days: 180 };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,617 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Oferim credite</title>
+    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
+    <link rel="stylesheet" href="./src/cart.css" type="text/css">
+<body>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.write('<style>input[type=checkbox], input[type=text],input[type=email],input[type=tel], select, select:focus{font-size: 16px;}</style>');
+        }
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            document.write('<style>select{padding-left:20px;}</style>');
+        }
+        window.onload = function () {
+            window.parent.dataLayer = window.dataLayer || [];
+        }
+        var partner_iframe_time_load;
+        var partner_iframe_time_load_f = 0;
+        window.addEventListener('DOMContentLoaded', function () {
+            partner_iframe_time_load = setTimeout(function () { if (partner_iframe_time_load_f == 0) { partner_iframe_time_load_f = 1; var partnerIframeEvent = new Event('getPartnerIframe'); window.dispatchEvent(partnerIframeEvent); } }, 10000);
+
+        });
+        window.addEventListener('load', function () {
+            clearTimeout(partner_iframe_time_load);
+            partner_iframe_time_load = setTimeout(function () { if (partner_iframe_time_load_f == 0) { partner_iframe_time_load_f = 1; var partnerIframeEvent = new Event('getPartnerIframe'); window.dispatchEvent(partnerIframeEvent); } }, 2000);
+
+        });
+    </script>
+    <div class="wizard-logo">
+        <a href="index.html">
+            <img src="./src/img/logo.png" alt="wizard-logo">
+        </a>
+    </div>
+    <div id="main_box" class="wizard">
+        <ul class="wizard__tab-label js-wizard__tabs">
+            <li class="account-info wizard__tab-label__item wizard__tab-label__item_current">
+                Aplicație
+            </li>
+            <li class="personal-info wizard__tab-label__item">
+                Detalii
+            </li>
+            <li class="ident-bank wizard__tab-label__item">
+                Cont
+            </li>
+        </ul>
+
+        <div class="container" id="container_main">
+
+            <form action="https://credit-rapid.org/v_3/credit3/?do=sms" method="post" id="first_form" name="first_form">
+
+                <div class="fieldset__item">
+                    <div class="item__content">
+                        <input id="wizard:name" name="name" value="" maxlength="50" required="" type="text"
+                            autocomplete="off"
+                            class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all item__input auto_validate empty"
+                            pattern="[ AĂÂBCDEFGHIÎJKLMNOPQRSȘTŞȚŢUVWXYZaăâbcdefghiîjklmnopqrsșşţtțuvwxyz]+( [AĂÂBCDEFGHIÎJKLMNOPQRSȘŞTȚŢUVWXYZaăâbcdefghiîjklmnopqrsșşţtțuvwxyz]*)?">
+
+                        <label id="wizard:j_idt16" class="ui-outputlabel ui-widget item__label" for="wizard:name">
+                            Nume<span class="ui-outputlabel-rfi">*</span>
+                        </label>
+                        <hr class="item__line">
+                    </div>
+                </div>
+                <div class="fieldset__item">
+                    <div class="item__content">
+                        <input id="wizard:name2" name="name2" value="" maxlength="50" required="" type="text"
+                            autocomplete="off"
+                            class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all item__input auto_validate empty"
+                            pattern="[ AĂÂBCDEFGHIÎJKLMNOPQRSȘŞTȚŢUVWXYZaăâbcdefghiîjklmnopqrsșşţtțuvwxyz]+( [AĂÂBCDEFGHIÎJKLMNOPQRSȘŞTȚŢUVWXYZaăâbcdefghiîjklmnopqrsșşţtțuvwxyz]*)?">
+
+                        <label id="wizard:j_idt16" class="ui-outputlabel ui-widget item__label" for="wizard:name2">
+                            Prenume<span class="ui-outputlabel-rfi">*</span>
+                        </label>
+                        <hr class="item__line">
+                    </div>
+                </div>
+                <div class="fieldset__item">
+                    <div class="item__content">
+                        <input id="wizard:phone" name="phone" value="" maxlength="50" required="" autocomplete="off"
+                            type="tel"
+                            pattern="(?:(?!\+407([1]{8}|[2]{8}|[3]{8}|[4]{8}|[5]{8}|[6]{8}|[7]{8}|[8]{8}|[9]{8}|[0]{8}))(\+4(0711|0720|0721|0722|0723|0724|0725|0726|0727|0728|0729|0730|0731|0732|0733|0734|0735|0736|0737|0738|0739|0740|0741|0742|0743|0744|0745|0746|0747|0748|0749|0750|0751|0752|0753|0754|0755|0756|0757|0758|0759|0760|0761|0761|0762|0763|0764|0765|0766|0767|0768|0769|0770|0771|0772|0773|0774|0775|0776|0780|0783|0784|0785|0786|0787|0788|0799)[0-9]{6}))"
+                            class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all item__input auto_validate mask empty"
+                            inputmode="text">
+
+                        <label id="wizard:j_idt16" class="ui-outputlabel ui-widget item__label" for="wizard:phone">
+                            Numărul tău de mobil<span class="ui-outputlabel-rfi">*</span>
+                        </label>
+                        <hr class="item__line">
+                    </div>
+                </div>
+
+                <div class="tab__policy" id="tab__policy">
+                    <p class="tab__policy__text">Prin apăsarea butonului “Înregistrează-te”, sunteți de acord cu <a
+                            href="https://credit-rapid.org/v_3/docs/Loan_terms_and_conditions_short.pdf"
+                            target="_blank">Termenii şi Condiţiile</a> şi <a
+                            href="https://credit-rapid.org/v_3/docs/Personal_data_protection_policy.pdf"
+                            target="_blank">Politica de Protecție a Datelor</a>
+                    </p>
+                </div>
+
+                <div class="tab__marketing" id="info_block_1">
+                    <div class="tab__marketing__checkbox">
+                        <div class="scr_marketing_checkbox" id="scr_marketing_checkbox">
+                            <span></span>
+
+                        </div>
+                    </div>
+                    <p class="tab__marketing__text">Сonfirm că am citit și accept prelucrarea datelor mele în scop de
+                        marketing și
+                        publicitate
+                    </p>
+                </div>
+                <div class="hidens" id="info_block_1_error">
+                </div>
+                <input type="hidden" value="0" name="marketing" id="police_1" autocomplete="off">
+                <input type="hidden" name="do" value="sms">
+                <input type="hidden" name="jssid" id="jssid" value="Ni43MTgxNTg0Njk2MDQ5MjlFMTU=">
+                <input type="hidden" name="log" id="log"
+                    value="&quot;1536x864x24&quot;;&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36internal-pdf-viewerundefinedPortable Document Formatmhjfbmdgcfjbbpaeojofohoefgiehjaiundefinedinternal-nacl-pluginundefinedapplication/pdfapplication/x-google-chrome-pdfapplication/x-naclapplication/x-pnacl&quot;;">
+
+
+
+                <input value="Înregistrează-te" type="submit" id="check_phone">
+            </form>
+            <div id="step_2">
+                <form action="https://credit-rapid.org/v_3/credit3/?do=smsauth" method="post" name="first_form2">
+                    <input name="code" pattern="([0-9]{4})" required="" type="hidden">
+
+
+                    <div class="info_block hidens" id="info_block_2">
+                    </div>
+                    <div class="code-form">
+                        <label class="ui-outputlabel ui-widget code-form__label">Introdu codul</label>
+                        <div class="otp-form">
+                            <div class="ui-input"><input id="wizard:otp1" name="wizard:otp1" type="tel" value=""
+                                    class="ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"
+                                    role="textbox" aria-disabled="false" aria-readonly="false">
+                                <hr class="ui-input__line">
+                            </div>
+                            <div class="ui-input"><input id="wizard:otp2" name="wizard:otp2" type="tel" value=""
+                                    class="ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"
+                                    role="textbox" aria-disabled="false" aria-readonly="false">
+                                <hr class="ui-input__line">
+                            </div>
+                            <div class="ui-input"><input id="wizard:otp3" name="wizard:otp3" type="tel" value=""
+                                    class="ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"
+                                    role="textbox" aria-disabled="false" aria-readonly="false">
+                                <hr class="ui-input__line">
+                            </div>
+                            <div class="ui-input"><input id="wizard:otp4" name="wizard:otp4" type="tel" value=""
+                                    class="ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"
+                                    role="textbox" aria-disabled="false" aria-readonly="false">
+                                <hr class="ui-input__line">
+                            </div>
+                        </div>
+                        <button id="clean_otp" type="button"><span></span></button>
+                    </div>
+
+
+                    <input value="Trimite" type="submit" id="check_sms_code" onclick="">
+                    <input value="Trimite" type="button" id="sms_code_resend" onclick="">
+
+                </form>
+
+            </div>
+            <div class="help_box">
+                <div></div>
+                <div><a href="https://credit-rapid.org/v_3/credit3/?do=exit" class="hidens" id="newtela">Schimbați
+                        numărul</a></div>
+            </div>
+            <div class="padding_box"></div>
+
+            <div id="wizardmarketingPopup" class="marketing-popup" data-resend="0">
+                <div class="popap">
+                    <p class="popap__text">Daca nu bifati, nu veti putea primi oferte interesante din partea noastra
+                    </p>
+                    <div class="popap__buttons"><button id="wizardmarketingPopupDone" name="wizard:j_idt32"
+                            class="ui-button" type="button" role="button" aria-disabled="false"><span
+                                class="ui-button-text">Doresc sa primesc</span></button>
+                        <button id="wizardmarketingPopupCancel" name="wizard:marketingPopup:Cancel"
+                            class="ui-button _blank" type="button" role="button" aria-disabled="false"><span
+                                class="ui-button-text">Nu doresc sa primesc</span></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            var step = 0;
+            //var initialIphoneHeight = window.innerHeight;
+            //var initialIphoneHeightSize1 = document.getElementsByClassName('top_box').item(0).getBoundingClientRect().height;
+            window.addEventListener('DOMContentLoaded', function () {
+                var menu_select_current = Array.prototype.slice.call(document.querySelectorAll("ul.wizard__tab-label li"));
+                menu_select_current[0].classList.add('wizard__tab-label__item_current');
+                //marketing
+                document.querySelector('#scr_marketing_checkbox').addEventListener('click', function () {
+                    if (this.classList.contains('active')) {
+                        document.getElementById('police_1').value = 0;
+                        this.classList.remove('active');
+                    } else {
+                        document.getElementById('police_1').value = 1;
+                        this.classList.add('active');
+                    }
+                });
+                document.querySelector('#wizardmarketingPopupDone').addEventListener('click', function () {
+                    document.querySelector('#scr_marketing_checkbox').click();
+                    document.querySelector('#check_phone').click();
+                    document.getElementById("wizardmarketingPopup").classList.remove('active');
+                });
+                document.querySelector('#wizardmarketingPopupCancel').addEventListener('click', function () {
+                    document.querySelector('#check_phone').click();
+                    document.getElementById("wizardmarketingPopup").classList.remove('active');
+                });
+
+
+                //marketing
+                var check_form_input_auto_ruuners = function (event, check = `1`) {
+
+                    if (check == 1 && !this.classList.contains('mask') && this.checkValidity() == false) {
+
+                        this.classList.add('ui-state-error');
+                    } else if (check == 1 && this.classList.contains('mask') && !$(this).inputmask("isComplete")) {
+                        this.classList.add('ui-state-error');
+                    } else {
+                        this.classList.remove('ui-state-error');
+                    }
+                    if (this.value.toString().trim() == '') {
+                        this.value = '';
+                        this.classList.add('empty');
+                    } else {
+                        this.classList.remove('empty');
+                    }
+
+                };
+                var check_form_input_auto = function () {
+                    var input = Array.prototype.slice.call(document.querySelectorAll("input.auto_validate"));
+                    for (var i = 0; i < input.length; i++) {
+                        if (input[i].required == true/* && !input[i].classList.contains('mask')*/) {
+
+                            input[i].onblur = check_form_input_auto_ruuners;
+
+                        }
+                        if (input[i].value.toString().trim() == '') {
+                            input[i].value = '';
+                            input[i].classList.add('empty');
+                        }
+                    }
+                };
+                new check_form_input_auto();
+
+                function otp_type_code(event) {
+
+                    var input = Array.prototype.slice.call(this.querySelectorAll("input"));
+
+                    var all_typed = '';
+                    var all_typed_focus = [];
+                    var all_typed_focus_event = 0;
+                    for (var i = 0; i < input.length; i++) {
+                        var typed = parseInt(input[i].value, 10);
+                        if (typed == NaN) {
+                            input[i].value = '';
+                        } else if (typed != NaN && typed >= 0 && typed <= 9) {
+
+
+                        } else {
+                            input[i].value = '';
+                        }
+                        if (input[i].value == '') {
+                            all_typed_focus.push(i);
+
+                        } else {
+                            all_typed = all_typed + '' + input[i].value;
+                        }
+                        if (event.target == input[i]) {
+                            all_typed_focus_event = i;
+                        }
+                    }
+                    if (all_typed_focus.length > 0) {
+                        var to_focus = Math.min.apply(null, all_typed_focus);
+
+                    } else {
+                        var to_focus = 0;
+                    }
+                    if (event.keyCode == 8) {
+                        if (all_typed_focus_event > 0) {
+                            all_typed_focus_event--;
+                            to_focus = all_typed_focus_event;
+                        }
+                    }
+                    if (event.keyCode == 46) {
+                        if (all_typed_focus_event < input.length) {
+                            all_typed_focus_event++;
+                            to_focus = all_typed_focus_event;
+                        }
+                    }
+
+                    document.querySelector("input[name=code]").value = all_typed;
+                    if (all_typed_focus.length == 0) {
+                        document.querySelector('#check_sms_code').click();
+                        //$('#check_sms_code').click();
+                    } else {
+                        input[to_focus].focus();
+                        input[to_focus].select();
+                    }
+                }
+                document.querySelector(".otp-form").addEventListener('keyup', otp_type_code);
+                document.getElementById("clean_otp").addEventListener('click', function () {
+                    var input = Array.prototype.slice.call(document.querySelector(".otp-form").querySelectorAll('input'));
+
+                    for (var i = 0; i < input.length; i++) {
+                        input[i].value = '';
+                    }
+                    input[0].focus();
+                });
+
+
+                document.getElementById("sms_code_resend").addEventListener('click', function () {
+                    this.classList.remove('active');
+                    document.getElementById("wizardmarketingPopup").dataset.resend = 1;
+                    $('#check_phone').click();
+                    $('#clean_otp').click();
+
+                    $('#info_block_2').css('display', 'none');
+                    setTimeout(function () {
+                        document.getElementById("sms_code_resend").classList.add('active');
+                    }, 30000);
+                });
+
+                (function ($) {
+                    $(document).ready(function () {
+                        // $("input[name='phone']").inputmask("+4079{8}", { "onincomplete": function(){ check_form_input_auto_ruuners.apply(this, [0,0]); }, "oncomplete": function(){ check_form_input_auto_ruuners.apply(this); } });
+                        $("input[name='phone']").inputmask("+4079{8}");
+
+                        // $("input[name='code']").inputmask("9999",{ "placeholder": "X"});
+
+                        if (step == 1) {
+                            $('#check_phone').prop('disabled', true);
+                            $("input[name='name']").prop('disabled', true);
+                            $("input[name='name2']").prop('disabled', true);
+                            $("input[name='phone']").prop('disabled', true);
+                            $('#info_block_1').css('display', 'none');
+                            $('#tab__policy').css('display', 'none');
+                            $('#check_phone').css('display', 'none');
+                            $('#step_2').show(200);
+                            $('#newtela').removeClass('hidens');
+                        }
+
+
+                        $('#check_phone').click(function () {
+
+                            var elements = document.forms.first_form.elements;
+
+                            for (i = 0; i < elements.length; i++) {
+                                var el = elements[i];
+                                if (el.required == true) {
+                                    el.classList.remove('ui-state-error');
+                                    if (el.checkValidity() == false) {
+                                        setTimeout(function (el) { el.classList.add('ui-state-error'); el.classList.remove('empty'); }, 500, el);
+                                    }
+                                }
+
+                            }
+
+                            if (document.forms.first_form.checkValidity() == false) {
+                                return false;
+                            }
+                            var name = $("input[name='name']").val();
+                            var name2 = $("input[name='name2']").val();
+                            var phone = $("input[name='phone']").val();
+                            var jssid = $("input[name='jssid']").val();
+                            var marketing = 0;
+                            var marketing_popup = document.getElementById("wizardmarketingPopup");
+                            if ($("input[name='marketing']").val() == 1) {
+                                var marketing = 1;
+                            } else if (marketing_popup.classList.contains('active') == false && marketing_popup.dataset.resend == 0) {
+                                // show marketing popup
+                                marketing_popup.classList.add('active');
+                                return false;
+                            }
+                            var sc_log = $("input[name='log']").val();
+                            $('#check_phone').prop('disabled', true);
+                            $("input[name='name']").prop('disabled', true);
+                            $("input[name='name2']").prop('disabled', true);
+                            $("input[name='phone']").prop('disabled', true);
+                            $("input[name='marketing']").prop('disabled', true);
+                            $('#check_phone').addClass('button_optical');
+                            $.post("https://credit-rapid.org/v_3/credit3/?do=sms", { name: name, name2: name2, phone: phone, jssid: jssid, log: sc_log, marketing: marketing, do: 'sms' }).done(function (data) {
+                                if (data != 1 && data != 2) {
+                                    $('#info_block_1_error').removeClass('hidens');
+                                    $('#info_block_1_error').text(data);
+                                    $('#info_block_1_error').removeClass('errors_ajax');
+                                    $('#info_block_1_error').addClass('errors_ajax');
+                                    $('#check_phone').prop('disabled', false);
+                                    $("input[name='name']").prop('disabled', false);
+                                    $("input[name='name2']").prop('disabled', false);
+                                    $("input[name='phone']").prop('disabled', false);
+                                    $("input[name='marketing']").prop('disabled', false);
+                                    $('#check_phone').removeClass('button_optical');
+                                } else if (data == 2) {
+                                    $('#info_block_1_error').removeClass('hidens');
+                                    $('#info_block_1_error').text('Mulțumesc, așteptați ca operatorul să sune.');
+                                    $('#info_block_1_error').removeClass('errors_ajax');
+                                    $('#info_block_1_error').addClass('errors_ajax');
+                                } else {
+                                    $('#info_block_1').css('display', 'none');
+                                    $('#check_phone').css('display', 'none');
+                                    $('#tab__policy').css('display', 'none');
+                                    $('#step_2').show(200);
+                                    $('#newtela').removeClass('hidens');
+                                    setTimeout(function () {
+                                        document.getElementById("sms_code_resend").classList.add('active');
+                                    }, 30000);
+                                }
+                            });
+
+                            return false;
+                        });
+
+                        $('#check_sms_code').click(function () {
+
+                            var elements = document.forms.first_form2.elements;
+                            for (i = 0; i < elements.length; i++) {
+                                var el = elements[i];
+                                if (el.required == true) {
+                                    el.classList.remove('errors');
+                                    if (el.checkValidity() == false) {
+
+                                        setTimeout(function (el) { el.classList.add('errors'); }, 500, el);
+                                    }
+                                }
+
+                            }
+
+                            if (document.forms.first_form2.checkValidity() == false) {
+                                return false;
+                            }
+                            var code = $("input[name='code']").val();
+                            $('#check_sms_code').prop('disabled', true);
+                            $('#check_sms_code').addClass('button_optical');
+                            $.post("https://credit-rapid.org/v_3/credit3/?do=smsauth", { code: code, do: 'smsauth' }).done(function (data) {
+                                data = data.split("|");
+                                if (data[0] == 0) {
+                                    $('#info_block_2').text(data[1]);
+                                    $('#info_block_2').css('display', 'block');
+                                    $('#info_block_2').removeClass('hidens');
+                                    $('#info_block_2').removeClass('errors_ajax');
+                                    $('#info_block_2').addClass('errors_ajax');
+                                    $('#check_sms_code').prop('disabled', false);
+                                    $('#check_sms_code').removeClass('button_optical');
+                                } else if (data[0] == 3) {
+                                    $('#info_block_2').text(data[1]);
+                                    $('#info_block_2').css('display', 'block');
+                                    $('#info_block_2').removeClass('errors_ajax');
+                                    $('#info_block_2').addClass('errors_ajax');
+                                    $('#check_sms_code').hide(200);
+
+                                } else if (data[0] == 2) {
+                                    window.top.location.href = data[1];
+                                } else if (data[0] == 1) {
+                                    window.top.location.href = data[1];
+                                } else {
+                                    //action
+                                    $('#info_block_2').text(data[0]);
+                                    $('#info_block_2').css('display', 'block');
+                                    $('#info_block_2').removeClass('errors_ajax');
+                                    $('#info_block_2').addClass('errors_ajax');
+                                    $('#check_sms_code').prop('disabled', false);
+                                    $('#check_sms_code').removeClass('button_optical');
+                                }
+                            });
+                            return false;
+                        });
+
+                        function get_scr_sess() {
+
+                            //var scr_sess=window.Basil().get('u');
+                            var scr_sess = window.Basil().get('u');
+                            document.getElementById("jssid").value = scr_sess;
+                            if (scr_sess == null) {
+                                setTimeout(get_scr_sess, 500);
+                            }
+
+                        }
+
+                        setTimeout(get_scr_sess, 1000);
+
+
+                        var nav = window.navigator, t = nav.userAgent;
+                        if (nav.plugins.length > 0) {
+                            for (var i = 0; i < nav.plugins.length; i++) {
+                                t += nav.plugins[i].filename + nav.plugins[i].version + nav.plugins[i].description;
+                            }
+                        }
+                        if (nav.mimeTypes.length > 0) {
+                            for (var i = 0; i < nav.mimeTypes.length; i++) {
+                                t += nav.mimeTypes[i].type;
+                            }
+                        }
+                        scr_l_user_s = '"' + screen.width + 'x' + screen.height + 'x' + screen.colorDepth + '";"' + t + '";';
+                        document.getElementById("log").value = scr_l_user_s;
+                    });
+                })(jQuery);
+                function loadanimationscript12() {
+                    fetch("animation.php").then(function (response) {
+                        if (response.ok) {
+                            console.log('animation load');
+                        } else {
+                            console.log('Network request for json failed with response ' + response.status + ': ' + response.statusText);
+                        }
+                    });
+                }
+                setTimeout(loadanimationscript12, 3000);
+            });
+
+            if (window.parent.scr_cart_shorts_5_iframe_auto == true || 2 == 1) {
+
+                function scr_cart_shorts_5_iframe_changeSize() {
+                    console.log('resize');
+                    // var obj = window.document;
+                    // var box = obj.getBoundingClientRect();
+                    var obj_container_main = document.getElementById("container_main");
+                    var obj_top_box = document.getElementsByClassName('top_box').item(0);
+                    var height = window.innerHeight; //window.parent.document.documentElement.clientHeight;
+                    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                        var height = window.document.documentElement.clientHeight;
+
+                    }
+                    var width = window.document.documentElement.clientWidth;
+                    var width_internal = window.document.documentElement.clientWidth - 16;
+                    var minheight = 10;
+                    console.log((obj_top_box.getBoundingClientRect().height + obj_container_main.getBoundingClientRect().height + minheight));
+                    if (height <= (obj_top_box.getBoundingClientRect().height + obj_container_main.getBoundingClientRect().height + minheight)) {
+                        obj_top_box.classList.add("hidens");
+                    } else {
+                        obj_top_box.classList.remove("hidens");
+                    }
+                    if (height <= (obj_container_main.getBoundingClientRect().height + minheight)) {
+                        obj_container_main.classList.remove("container_main_fixed");
+                        console.log(' remove container_main_fixed');
+                    } else {
+                        if (width <= 650) {
+                            obj_container_main.classList.add("container_main_fixed");
+                        } else {
+                            obj_container_main.classList.remove("container_main_fixed");
+                        }
+                    }
+
+
+                }
+                var timestart;
+                window.addEventListener('resize', function () { clearTimeout(timestart); timestart = setTimeout(scr_cart_shorts_5_iframe_changeSize, 500); });
+                scr_cart_shorts_5_iframe_changeSize();
+
+                function scr_cart_shorts_5_iframe_changeSize_iphone() {
+                    var currentiIphoneHeight = window.innerHeight;
+                    var size = initialIphoneHeight - currentiIphoneHeight;
+                    var minheight = 10;
+                    console.log(currentiIphoneHeight);
+                    console.log(initialIphoneHeight);
+                    var obj_container_main = document.getElementById("container_main");
+                    var obj_padding_box = document.getElementsByClassName('padding_box').item(0);
+                    var obj_top_box = document.getElementsByClassName('top_box').item(0);
+                    var width = window.document.documentElement.clientWidth;
+
+                    if ((initialIphoneHeightSize1 / 2) <= (obj_top_box.getBoundingClientRect().height + obj_container_main.getBoundingClientRect().height + minheight)) {
+                        obj_top_box.classList.add("hidens");
+                    } else {
+                        obj_top_box.classList.remove("hidens");
+                    }
+
+                    if ((initialIphoneHeightSize1 / 2) <= (obj_container_main.getBoundingClientRect().height + minheight)) {
+                        obj_container_main.classList.remove("container_main_fixed");
+                        console.log(' remove container_main_fixed');
+                    } else {
+                        if (width <= 650) {
+                            obj_container_main.classList.add("container_main_fixed");
+                        } else {
+                            obj_container_main.classList.remove("container_main_fixed");
+                        }
+                    }
+                    setTimeout(function () { window.scrollTo(0, 0) }, 100);
+
+
+                    this.focus();
+                }
+                if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+
+                    var elements_x = document.getElementsByTagName("input");
+                    for (i = 0; i < elements_x.length; i++) {
+                        var el = elements_x[i];
+                        if (el.type == 'text' || el.type == 'tel') {
+                            var timestart_focus;
+                            var timestart_blur;
+                            el.addEventListener("focus", function (event) { event.preventDefault(); clearTimeout(timestart_blur); setTimeout(scr_cart_shorts_5_iframe_changeSize_iphone, 100); }, true);
+                            el.addEventListener("blur", function () { clearTimeout(timestart_blur); timestart_blur = setTimeout(scr_cart_shorts_5_iframe_changeSize, 100); }, true);
+                        }
+
+                    }
+                }
+            }
+        </script>
+    </div>
+    <script>
+        var cookie_config = { 'cookies_law_name': "cookies_law_hora", 'css': "../cookie_law/cookie_law.css", 'text': "Site-ul www.horacredit.ro folosește cookie-uri pentru a personaliza conținutul afișat, a se conecta și pentru analiza traficului. Dacă continuați să utilizați acest site, înseamnă că înțelegeți acest lucru. Pentru mai multe informații, consultați <a href=\"https://credit-rapid.org/v_3/docs/politica_cookies.pdf\" target=\"_blank\">politica privind cookie-urile</a> și <a href=\"https://credit-rapid.org/v_3/docs/Personal_data_protection_policy.pdf\" target=\"_blank\">Politica de Protecție a Datelor</a>", 'button': "Închide" };
+    </script>
+    <script type="text/javascript" src="./src/cookie_law.min.js" defer=""
+        onload="new script_cookie_law(cookie_config)"></script>
+    <script src="./src/jquery-3.5.0.min.js" defer=""></script>
+    <script src="./src/jquery.inputmask.min.js" defer=""></script>
+
+    <script type="text/javascript" src="./src/basil.js" defer=""></script>
+</body>
+
+</html>
